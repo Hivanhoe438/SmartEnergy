@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ProductionComponent } from './production/production.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +18,8 @@ import { ProductionComponent } from './production/production.component';
     FooterComponent,
     AboutPageComponent,
     ProductionComponent,
+    AcceuilComponent,
+
   ],
   imports: [
     BrowserModule,
