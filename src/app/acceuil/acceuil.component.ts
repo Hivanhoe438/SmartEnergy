@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcceuilComponent implements OnInit {
 
+  acceuil!: string;
+
   constructor() { }
 
   ngOnInit(): void {
+
+    this.acceuil = 'assets/acceuil.jpg';
   }
 
 }

@@ -1,1 +1,29 @@
-<p>production works!</p>
+
+<div class="searchBar">  <!-- permet de rechercher la ville que nous souhaitons obtenir les données (8 villes disponibles) -->
+  <body>
+    <h3>Data of production in the world! (on US Only)</h3>
+
+    <h3>Production by city</h3>
+  <input  id="research" [(ngModel)]="nameEnter" placeholder="Search your city">
+  <button mat-raised-button color="basic" (click)="research()">ok</button>
+  <div *ngIf="this.Trouve">
+    <tr>{{ productions.station_info.state }}</tr><br>
+    <table>
+      <thead>
+          <tr>
+              <th *ngFor="let month of this.months">{{month}}</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td *ngFor = "let out of productions.outputs.ac_monthly">{{ out }}</td>
+          </tr>
+      </tbody>
+  </table>
+  </div>
+</body>
+</div>
+
+
+
+

@@ -9,6 +9,10 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ProductionComponent } from './production/production.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,13 +23,21 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
     AboutPageComponent,
     ProductionComponent,
     AcceuilComponent,
-
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
+
 export class AppModule { }
